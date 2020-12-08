@@ -1,0 +1,13 @@
+.navBar{;
+    border-bottom: solid 2px red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navBar-list{
+    margin: 10px;
+    font-size: 1.1em;
+    list-style: none;
+}
