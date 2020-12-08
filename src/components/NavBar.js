@@ -9,12 +9,18 @@ class NavBar extends React.Component {
   	return (
  
         <>
-        <ul className="navBar">
-            <img src="buy-ari.svg" alt=""/>
-            <li className="navBar-list">Registrarse</li>
-            <li className="navBar-list">Cómo comprar</li>
-            <li className="navBar-list">Ayuda</li>
-        </ul>
+        <header>
+            <div className="div-header_img">
+                <img className="logoHeader" src="./img/buy-ari.png" alt=""/>
+            </div>
+            <div className="div-header_list">
+            <ul className="navBar">
+                <li className="navBar-list">Registrarse</li>
+                <li className="navBar-list">Cómo comprar</li>
+                <li className="navBar-list">Ayuda</li>
+            </ul>
+            </div>
+        </header>
       </>
  
   	)

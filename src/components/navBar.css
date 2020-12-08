@@ -1,5 +1,14 @@
-.navBar{;
+header{
+    padding: 1em;
     border-bottom: solid 2px red;
+}
+
+.div-header_img{
+    width: 4em;
+    float: left;
+    margin-bottom: 1em;
+}
+.navBar{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -8,6 +17,16 @@
 
 .navBar-list{
     margin: 10px;
+    margin-bottom: 0px;
     font-size: 1.1em;
     list-style: none;
 }
+
+.logoHeader{
+    width: 100%;
+    vertical-align: center;
+    margin: 0px;
+}
+
+
+
