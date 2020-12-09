@@ -1,10 +1,9 @@
 import React from 'react';
 import './navBar.css';
+import CartWidget from '../CartWidget/cartWidget.jsx'
 
  
-class NavBar extends React.Component {
- 
-  render() {
+const NavBar = () => {
  
   	return (
  
@@ -18,14 +17,15 @@ class NavBar extends React.Component {
                 <li className="navBar-list">Registrarse</li>
                 <li className="navBar-list">Cómo comprar</li>
                 <li className="navBar-list">Ayuda</li>
+                
             </ul>
+            <CartWidget/>
             </div>
         </header>
       </>
  
   	)
-    
-  }
+
  
 }
  

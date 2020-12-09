@@ -1,12 +1,14 @@
-//import logo from './logo.svg';
-//import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from './components/NavBar.js';
+import React from 'react';
+import NavBar from './components/NavBar/NavBar.jsx';
+import ItemListContainer from './components/itemListContainer/ItemListContainer.jsx';
 
-function App() {
+const App = () => {
   return (
 
-        <NavBar/>
+        <div>
+          <NavBar/>
+          <ItemListContainer list='Hola!'/>
+        </div>
   );
 }
 
