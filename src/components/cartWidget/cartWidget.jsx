@@ -1,14 +1,11 @@
 import React from 'react';
-import './cartWidget.css';
+import './cartWidget.css'
 
 const CartWidget = () =>{
     return(
     <>
-        <img src="https://icongr.am/feather/shopping-cart.svg?size=48&color=ff0000
-
-" alt=""/>
-    
-    </>
+       <a href=""><img src="https://icongr.am/feather/shopping-cart.svg?size=76&color=currentColor" alt=""/></a>
+   </>
     )
 }
 

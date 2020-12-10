@@ -1,6 +1,6 @@
 import React from 'react';
 import './navBar.css';
-import CartWidget from '../CartWidget/cartWidget.jsx'
+import CartWidget from '../cartWidget/cartWidget.jsx'
 
  
 const NavBar = () => {
@@ -14,12 +14,12 @@ const NavBar = () => {
             </div>
             <div className="div-header_list">
             <ul className="navBar">
-                <li className="navBar-list">Registrarse</li>
-                <li className="navBar-list">Cómo comprar</li>
-                <li className="navBar-list">Ayuda</li>
-                
+                <li className="navBar-list"><a href="">Registrarse</a></li>
+                <li className="navBar-list"><a href="">Cómo comprar</a></li>
+                <li className="navBar-list"><a href="">Ayuda</a></li>
+                <li className="navBar-list"><CartWidget/></li>
             </ul>
-            <CartWidget/>
+            
             </div>
         </header>
       </>
