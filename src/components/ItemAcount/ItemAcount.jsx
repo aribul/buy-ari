@@ -22,8 +22,8 @@ const ItemAcount = (props) => {
   return (
     <>
       <p>Contador : {contador}</p>
-      <button onClick={aumentarContador}>Aumentar contador</button>
-      <button onClick={restarContador}>Restar contador</button>
+      <button disabled= {contador === props.stock} onClick={aumentarContador}>Aumentar contador</button>
+      <button disabled= {contador === props.initial} onClick={restarContador}>Restar contador</button>
     </>
   )
 }  
