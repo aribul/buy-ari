@@ -9,17 +9,28 @@ const ItemAcount = () => {
   const aumentarContador = () => {
     setContador(contador+1); 
     
-    if(stock === 0){
+    if(contador < stock){
         document.getElementById('botonAumentar').disabled = true;
-        document.write("Nos quedamos sin stock!");
-    }else{
-        document.getElementById('botonAumentar').disabled = false;
+
+        console.log("Hola");
+
     }
 
   }
 
+
+
   const restarContador = () => {
     setContador(contador-1); 
+
+    if(stock > contador){
+      document.getElementById('botonAumentar').disabled = false;
+
+    }
+
+    if(contador < 2){
+      document.getElementById('botonRestar').disabled = false;
+    }
   }
 
 
