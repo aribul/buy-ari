@@ -9,7 +9,7 @@ const ItemAcount = () => {
   const aumentarContador = () => {
     setContador(contador+1); 
     
-    if(contador < stock){
+    if(contador === stock){
         document.getElementById('botonAumentar').disabled = true;
 
         console.log("Hola");
@@ -23,7 +23,7 @@ const ItemAcount = () => {
   const restarContador = () => {
     setContador(contador-1); 
 
-    if(stock > contador){
+    if(stock >= contador){
       document.getElementById('botonAumentar').disabled = false;
 
     }
