@@ -34,7 +34,7 @@ const ItemList = () => {
                             <h3 className="itemTitle">{item.title}</h3>
                             <p className="itemPrice">{item.price}</p>
                         </div>
-                        <ItemCount />
+                        <ItemCount initial = {1} stock ={10}/>
                     </div>
                     )
                 })
