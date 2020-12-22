@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const ItemAcount = (props) => {
+const ItemCount = (props) => {
     const[contador, setContador] = React.useState(1);
 
   const aumentarContador = () => {
@@ -28,4 +28,4 @@ const ItemAcount = (props) => {
   )
 }  
 
-export default ItemAcount;
+export default ItemCount;
