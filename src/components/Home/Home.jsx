@@ -9,8 +9,9 @@ const Home = () => {
         <>
 
         <ItemList/>
-        <ItemDetailContainer/>
         <ItemCount initial = {1} stock ={10}/>
+        <ItemDetailContainer/>
+        
         </>
     )
 }
