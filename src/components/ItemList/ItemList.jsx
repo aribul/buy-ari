@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { products } from '../Item/Item.jsx';
-import ItemCount from "../ItemCount/ItemCount.jsx";
+import { products } from '../../products';
+import Item from "../Item/Item";
 
 const ItemList = () => {
 
@@ -14,7 +14,7 @@ const ItemList = () => {
                 promise.then(products => {
                     setNewItem(products);
                 });
-            }, 5000);
+            }, 2000);
         
         }, []);
 
@@ -23,19 +23,18 @@ const ItemList = () => {
         return(
             <>
             
-            {product.map((item) => {
+            {product.map((products) => {
 
                     return(
-                    <div key={item.id} id="pastryContainer">
-                        <div id="pastry">
-                            <img id= "imagen producto" src={item.image} alt="Imagen producto"/>
-                        </div>
-                        <div>
-                            <h3 className="itemTitle">{item.title}</h3>
-                            <p className="itemPrice">{item.price}</p>
-                        </div>
-                        <ItemCount initial = {1} stock ={10}/>
-                    </div>
+                    <Item key={products.id}               
+
+                    pictureUrl={products.pictureUrl}                 
+
+                    title={products.title}                
+
+                    price={products.price}                    
+
+                    />
                     )
                 })
             
