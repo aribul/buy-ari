@@ -3,8 +3,7 @@ import { products } from '../../products';
 import Item from "../Item/Item";
 
 const ItemList = () => {
-
-    const [product, setNewItem] = useState([]);
+    const [product, setProduct] = useState([]);
 
         useEffect(() => {
             setTimeout(() => {
@@ -12,7 +11,7 @@ const ItemList = () => {
                     resolve(products);
                 });
                 promise.then(products => {
-                    setNewItem(products);
+                    setProduct(products);
                 });
             }, 2000);
         
