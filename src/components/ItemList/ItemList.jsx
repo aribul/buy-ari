@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { products } from '../../products';
 import Item from "../Item/Item";
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 
 const ItemList = () => {
     const [product, setProduct] = useState([]);
@@ -25,20 +26,22 @@ const ItemList = () => {
             {product.map((products) => {
 
                     return(
+
                     <Item key={products.id}               
 
                     pictureUrl={products.pictureUrl}                 
 
-                    title={products.title}                
+                    title={products.title}     
 
                     price={products.price}                    
-
                     />
-                    )
-                })
+                )
+                    })
             
+               
+            }
+            <ItemDetailContainer/>     
                 
-                }
             </>
         )
 
