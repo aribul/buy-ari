@@ -1,17 +1,52 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from 'react-router-dom'
+import {useParams} from 'react-router-dom';
 import { products } from "../../products.js";
 import ItemDetail from './ItemDetail.jsx';
 
 
 
+    const detailProd = [{id: products.id, title:products.title, description:products.description}];
+
+    const itemDetail = new Promise( (result, reject) => 
+        
+        setTimeout(() => result(detailProd), 
+                
+                3000) ) ;
+
+    const ItemDetailContainer = () =>{
+        const parametros = useParams ()
+
+
+            const [products, setProducts] = useState([]); 
+
+            useEffect(() =>{ 
+
+            itemDetail.then((product) => { 
+
+            setProducts(product); 
+
+            }); 
+
+    }, []) 
+
+    return( <> 
+
+    {!products ? <div> Loading ...</div> : <ItemDetail products={products} /> } 
+
+    </> )
 
 
 
-const ItemDetailContainer = () => {
+
+
+
+
+
+
+
+  /*const ItemDetailContainer = () => {
     const [product, setProduct] = useState([]);
-    const [loading, setLoading] = useState(true)
-    const params = useParams();
+    const {id} = useParams()
 
         useEffect(() => {
             setTimeout(() => {
@@ -31,7 +66,7 @@ return(
         {  
             product.map((p)=>{
                 return(
-                    p.id === params.id ? 
+                    p.id === product.lenght ? 
                     <ItemDetail 
                         key={p.id}
                         products={{
@@ -49,7 +84,7 @@ return(
 )
 
 
-    /*return(
+  return(
         <>
              {product.map((products) => {
                 return (

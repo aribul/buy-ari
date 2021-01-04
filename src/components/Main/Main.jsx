@@ -1,6 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer.jsx';
+import { Route, Switch} from 'react-router-dom';
 import Home from "../Home/Home";
 import Productos from "../Productos/Productos";
 import Registro from "../Registro/Registro";
@@ -13,31 +12,30 @@ const Main = () => {
     return(
         <>
         <main>
+        <Switch>
 
-        <Route exact path="/" >
-            <Home/>
-        </Route>
+            <Route exact path="/" >
+                <Home/>
+            </Route>
 
-        <Route path="/productos">
-            <Productos/>
-        </Route>
+            <Route path="/Productos">
+                <Productos/>
+            </Route>
 
-        <Route path="/Registro">
-            <Registro/>
-        </Route>
+            <Route path="/Registro">
+                <Registro/>
+            </Route>
 
-        <Route path="/Como Comprar">
-            <ComoComprar/>
-        </Route>
-        
-        <Route path="/Ayuda">
-            <Ayuda/>
-        </Route>
+            <Route path="/Como Comprar">
+                <ComoComprar/>
+            </Route>
+            
+            <Route path="/Ayuda">
+                <Ayuda/>
+            </Route>
 
+        </Switch>
 
-
-       
-        <ItemDetailContainer/>
         </main>
         </>
     )
