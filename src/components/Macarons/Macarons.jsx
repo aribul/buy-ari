@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-const Registro = () => {
+const Macarons = () => {
 
     return(
         <>
-        <h2>Registro</h2>
+        <h2>Macarons</h2>
         </>
     )
 }
 
-export default Registro
+export default Macarons

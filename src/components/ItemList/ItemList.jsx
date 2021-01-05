@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import {Route} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { products } from '../../products';
 import Item from "../Item/Item";
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
 
 const ItemList = () => {
+
+    const parametros = useParams ()
+
     const [product, setProduct] = useState([]);
 
         useEffect(() => {
@@ -42,10 +44,7 @@ const ItemList = () => {
                
             }
 
-            <Route path="/Productos/:title">
-            <ItemDetailContainer/> 
-            </Route>  
-
+            
                 
             </>
         )

@@ -1,10 +1,14 @@
 import React from 'react';
-import { Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from "../Home/Home";
 import Productos from "../Productos/Productos";
-import Registro from "../Registro/Registro";
-import ComoComprar from "../ComoComprar/ComoComprar";
-import Ayuda from "../Ayuda/Ayuda";
+import Macarons from "../Macarons/Macarons";
+import Cupcakes from "../Cupcakes/Cupcakes";
+import Tortas from "../Tortas/Tortas";
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+
+
+
 
 
 
@@ -18,21 +22,28 @@ const Main = () => {
                 <Home/>
             </Route>
 
-            <Route path="/Productos">
+            <Route path="/productos">
                 <Productos/>
             </Route>
 
-            <Route path="/Registro">
-                <Registro/>
+            <Route path="macarons">
+                <Macarons/>
             </Route>
 
-            <Route path="/Como Comprar">
-                <ComoComprar/>
+            <Route path="/cupcakes">
+                <Cupcakes/>
             </Route>
             
-            <Route path="/Ayuda">
-                <Ayuda/>
+            <Route path="/tortas">
+                <Tortas/>
             </Route>
+
+
+            <Route path="/productos/:id">
+                <ItemDetailContainer/> 
+            </Route>  
+
+
 
         </Switch>
 

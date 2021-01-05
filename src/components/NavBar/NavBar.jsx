@@ -15,9 +15,9 @@ const NavBar = () => {
             <div className="div-header_list">
             <ul className="navBar">
                 <li className="navBar-list"><Link to="/productos">Productos</Link></li>
-                <li className="navBar-list"><Link to="/registro">Registrarse</Link></li>
-                <li className="navBar-list"><Link to="/comoComprar">Cómo comprar</Link></li>
-                <li className="navBar-list"><Link to="/ayuda">Ayuda</Link></li>
+                <li className="navBar-list"><Link to="/macarons">Macarons</Link></li>
+                <li className="navBar-list"><Link to="/cupcakes">Cupcakes</Link></li>
+                <li className="navBar-list"><Link to="/tortas">Tortas</Link></li>
                 <li className="navBar-list"><CartWidget/></li>
             </ul>
             

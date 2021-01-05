@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Ayuda = () => {
+const Tortas = () => {
 
     return(
         <>
-        <h2>Ayuda</h2>
+        <h2>Tortas</h2>
         </>
     )
 
 }
 
-export default Ayuda
+export default Tortas

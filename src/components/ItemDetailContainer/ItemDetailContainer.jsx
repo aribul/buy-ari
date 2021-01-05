@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import {useParams} from 'react-router-dom';
 import { products } from "../../products.js";
 import ItemDetail from './ItemDetail.jsx';
 
@@ -14,7 +13,8 @@ import ItemDetail from './ItemDetail.jsx';
                 3000) ) ;
 
     const ItemDetailContainer = () =>{
-        const parametros = useParams ()
+
+        
 
 
             const [products, setProducts] = useState([]); 

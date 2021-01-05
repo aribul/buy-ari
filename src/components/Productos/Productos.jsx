@@ -1,19 +1,15 @@
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+
 import { products } from '../../products';
-import ItemList from "../ItemList/ItemList";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 
 const Productos = () => {
     return(
         <>
-          <Switch>
 
-            <Route path="/"{...products.title}>
-            <ItemList/>
-            </Route>
+            <ItemListContainer/>
              
 
-            </Switch>
         </>
     )
 

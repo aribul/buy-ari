@@ -1,11 +1,13 @@
 import React from 'react';
+import ItemCount from '../ItemCount/ItemCount';
+import ItemListContainer from '../ItemListContainer/ItemListContainer';
 
 
 const Home = () => {
 
     return(
         <>
-        <h2>Home</h2>
+            <ItemListContainer/>
         </>
     )
 }

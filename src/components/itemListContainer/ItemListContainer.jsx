@@ -1,12 +1,13 @@
 import React from 'react';
-import ItemCount from '../ItemCount/ItemCount.jsx';
+import ItemList from "../ItemList/ItemList";
 
 
-const ItemListContainer = (props) =>{
+const ItemListContainer = () =>{
     return(
      <section>
-         <p>{props.list}</p>
-         <ItemCount initial = {1} stock ={10}/>
+         <div>
+             <ItemList/>
+         </div>
      </section>
     )
     }
